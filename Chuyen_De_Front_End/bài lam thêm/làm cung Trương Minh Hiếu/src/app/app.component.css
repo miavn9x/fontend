@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Great+Vibes&family=Pacifico&display=swap');
+
+:root {
+  --main-bg-color-dark: #3E2723;
+  --main-bg-color-light: #8D6E63;
+  --beige-light: #FFF8E1;
+  --cream: #FFF9C4;
+  --orange-light: #FFE0B2;
+  --terracotta: #D95B43;
+  --green-dark: #1B5E20;
+  --olive-dark: #4B5320;
+  --text-color-dark: #3E2723;
+  --text-color-light: #FFFFFF;
+  --button-color-light: #FFE0B2;
+  --header-color: #3E2723;
+  --main-font-family: 'Abhaya Libre', serif;
+  --text-shadow: 1px 1px 2px #000;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  max-width: 100dvw;
+  overflow-x: hidden;
+  font-size: 62.5%;
+  height: 100%;
+  scrollbar-width: none;
+}
+
+/* Ẩn thanh cuộn trên Webkit (Chrome, Safari, Opera) */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  width: 100dvw;
+  overflow-y: auto;
+  background: #C8B6A6;
+  color: var(--sub-color);
+  font-family: 'Abhaya Libre', serif;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}

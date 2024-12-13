@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 2 - Website thương mại điện tử nhỏ</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./assets/css/resposive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <input type="checkbox" name="toggler" id="toggler" />
+      <label for="toggler" class="header__toggler fas fa-bars"></label>
+
+      <a href="./index.html" class="header__logo">
+        Store <span class="header__logo-dot">.</span>
+      </a>
+
+      <nav class="header__navbar">
+        <a href="./index.html" class="header__nav-link">Home</a>
+        <a href="./index.html#about" class="header__nav-link">About</a>
+        <a href="./index.html#products" class="header__nav-link">Products</a>
+        <a href="./index.html#contact" class="header__nav-link">Contact</a>
+      </nav>
+
+      <nav class="header__icons">
+        <a
+          href="./cart.html"
+          class="header__icon header__icon--cart fas fa-cart-shopping"
+        ></a>
+      </nav>
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home__content">
+        <h3 class="home__title">High Quality Products</h3>
+        <span class="home__subtitle">Natural & Elegant</span>
+        <p class="home__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+          mollitia officia qui ab sint fuga suscipit ut nulla. Delectus at
+          tempore laudantium quidem ipsum deserunt vitae eaque magni inventore
+          animi molestias perferendis quaerat officiis fuga debitis, corporis
+          pariatur necessitatibus dolorem voluptatem obcaecati? Atque facilis,
+          repudiandae nisi, minus alias totam commodi quisquam ea beatae porro
+          assumenda hic ipsa vero, odit incidunt? Perspiciatis voluptas natus
+          dolorem quia amet, possimus assumenda aspernatur velit maxime at
+          recusandae est libero nihil quae, molestias ad eveniet in voluptate
+          distinctio modi odio praesentium. Nemo inventore sapiente
+          reprehenderit? Pariatur, sapiente officia. Voluptatibus ab atque ullam
+          dicta mollitia perferendis?
+        </p>
+        <a href="#" class="main-btn">Shop now</a>
+      </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+      <h1 class="heading"><span class="heading__highlight">About</span> Us</h1>
+      <div class="about__main-row">
+        <div class="about__video-container">
+          <video
+            class="about__video"
+            src="./assets/video/about__video.mp4"
+            loop
+            autoplay
+            muted
+          ></video>
+          <h3 class="about__video-title">Best Products</h3>
+        </div>
+        <div class="about__content">
+          <h3 class="about__content-title">Why Choose Us</h3>
+          <p class="about__content-text">Lorem ipsum dolor sit amet.</p>
+          <p class="about__content-text">Lorem ipsum dolor sit amet.</p>
+          <a href="" class="about__btn main-btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <!-- Icons -->
+    <section class="icons-container" id="features">
+      <div class="icons icons__item">
+        <i class="fas fa-shopping-cart icons__icon"></i>
+        <div class="info icons__info">
+          <h3 class="icons__title">Free Delivery</h3>
+          <span class="icons__description">On All Orders</span>
+        </div>
+      </div>
+      <div class="icons icons__item">
+        <i class="fas fa-tags icons__icon"></i>
+        <div class="info icons__info">
+          <h3 class="icons__title">15 Days Return</h3>
+          <span class="icons__description">Moneyback Guarantee</span>
+        </div>
+      </div>
+      <div class="icons icons__item">
+        <i class="fas fa-gifts icons__icon"></i>
+        <div class="info icons__info">
+          <h3 class="icons__title">Gifts</h3>
+          <span class="icons__description">Gifts For Loved Ones</span>
+        </div>
+      </div>
+      <div class="icons icons__item">
+        <i class="fas fa-paypal icons__icon"></i>
+        <div class="info icons__info">
+          <h3 class="icons__title">Secured Payment</h3>
+          <span class="icons__description">Protected By Paypal</span>
+        </div>
+      </div>
+    </section>
+    <!-- Products -->
+    <section class="products" id="products">
+      <h1 class="heading">
+        Latest <span class="heading__highlight">product</span>
+      </h1>
+      <div class="box-container products__container">
+        <div class="box products__box">
+          <figure class="image products__image">
+            <img src="./assets/imgs/h1.jpg" alt="" class="products__img" />
+            <div class="form products__form">
+              <form action="">
+                <input
+                  type="submit"
+                  value="Add To Cart"
+                  class="cart-btn products__cart-btn"
+                />
+              </form>
+            </div>
+          </figure>
+          <span class="discount products__discount">15% OFF</span>
+          <div class="content products__content">
+            <h3 class="products__title">Table</h3>
+            <p class="price products__price">
+              $155
+              <span class="products__old-price">$220</span>
+            </p>
+          </div>
+        </div>
+        <div class="box products__box">
+          <figure class="image products__image">
+            <img src="./assets/imgs/h2.jpg" alt="" class="products__img" />
+            <div class="form products__form">
+              <form action="">
+                <input
+                  type="submit"
+                  value="Add To Cart"
+                  class="cart-btn products__cart-btn"
+                />
+              </form>
+            </div>
+          </figure>
+          <span class="discount products__discount">15% OFF</span>
+          <div class="content products__content">
+            <h3 class="products__title">Lamp</h3>
+            <p class="price products__price">
+              $155
+              <span class="products__old-price">$220</span>
+            </p>
+          </div>
+        </div>
+        <div class="box products__box">
+          <figure class="image products__image">
+            <img src="./assets/imgs/h3.jpg" alt="" class="products__img" />
+            <div class="form products__form">
+              <form action="">
+                <input
+                  type="submit"
+                  value="Add To Cart"
+                  class="cart-btn products__cart-btn"
+                />
+              </form>
+            </div>
+          </figure>
+          <span class="discount products__discount">15% OFF</span>
+          <div class="content products__content">
+            <h3 class="products__title">Chairs</h3>
+            <p class="price products__price">
+              $155
+              <span class="products__old-price">$220</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Reviews -->
+    <section class="review" id="previews">
+      <h1 class="heading">
+        Customer's <span class="heading__highlight">Reviews</span>
+      </h1>
+      <div class="box-container review__container">
+        <div class="box review__box">
+          <div class="stars review__stars">
+            <i class="fas fa-star review__star"></i>
+            <i class="fas fa-star review__star"></i>
+            <i class="fas fa-star review__star"></i>
+            <i class="fas fa-star review__star"></i>
+            <i class="fas fa-star review__star"></i>
+          </div>
+          <p class="review__text">
+            Awesome Products, I Like Those Products So Much
+          </p>
+          <div class="user review__user">
+            <img
+              src="./assets/imgs/customer1.jpg"
+              alt=""
+              class="review__image"
+            />
+            <div class="user-info">
+              <h3 class="review__user-name">John</h3>
+              <span class="review__user-status">Happy Customer</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right review__quote-icon"></span>
+        </div>
+        <div class="box review__box">
+          <div class="stars review__stars">
+            <i class="fas fa-star review__star"></i>
+            <i class="fas fa-star review__star"></i>
+            <i class="fas fa-star review__star"></i>
+            <i class="fas fa-star review__star"></i>
+            <i class="fas fa-star review__star"></i>
+          </div>
+          <p class="review__text">
+            Awesome Products, I Like Those Products So Much
+          </p>
+          <div class="user review__user">
+            <img
+              src="./assets/imgs/customer2.jpg"
+              alt=""
+              class="review__image"
+            />
+            <div class="user-info">
+              <h3 class="review__user-name">Mary</h3>
+              <span class="review__user-status">Happy Customer</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right review__quote-icon"></span>
+        </div>
+        <div class="box review__box">
+          <div class="stars review__stars">
+            <i class="fas fa-star review__star"></i>
+            <i class="fas fa-star review__star"></i>
+            <i class="fas fa-star review__star"></i>
+            <i class="fas fa-star review__star"></i>
+            <i class="fas fa-star review__star"></i>
+          </div>
+          <p class="review__text">
+            Awesome Products, I Like Those Products So Much
+          </p>
+          <div class="user review__user">
+            <img
+              src="./assets/imgs/customer3.jpg"
+              alt=""
+              class="review__image"
+            />
+            <div class="user-info">
+              <h3 class="review__user-name">Lisa</h3>
+              <span class="review__user-status">Happy Customer</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right review__quote-icon"></span>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h1 class="heading">
+        <span class="heading__highlight">Contact</span> Us
+      </h1>
+      <div class="main-row contact__main-row">
+        <div class="contact__info">
+          <h3 class="contact__number">Contact Number: +123 456 7890</h3>
+          <p class="contact__service">
+            Customer Service:
+            <span class="contact__email">Customer@Email.Com</span>
+          </p>
+          <p class="contact__returns">
+            Returns And Refunds:
+            <span class="contact__email">Reurns@Email.Com</span>
+          </p>
+          <p class="contact__inquiries">
+            Inquiries: <span class="contact__email">Inquiries@Email.com</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+      <div class="box-container footer__container">
+        <div class="box footer__box">
+          <h3 class="footer__title">Quick Links</h3>
+          <a href="./index.html" class="footer__link">Home</a>
+          <a href="./about.html" class="footer__link">About</a>
+          <a href="./products.html" class="footer__link">Features</a>
+          <a href="./products.html" class="footer__link">Products</a>
+          <a href="./contact.html" class="footer__link">Contact</a>
+          <a href="#preview" class="footer__link">Preview</a>
+        </div>
+        <div class="box footer__box">
+          <h3 class="footer__title">Extra Links</h3>
+          <a href="./cart.html" class="footer__link">Cart</a>
+          <a href="./products.html" class="footer__link">Products</a>
+          <a href="#" class="footer__link">Special Offers</a>
+        </div>
+        <div class="box footer__box">
+          <h3 class="footer__title">Locations</h3>
+          <p class="footer__location">Australia</p>
+          <p class="footer__location">US</p>
+          <p class="footer__location">Germany</p>
+        </div>
+        <div class="box footer__box">
+          <h3 class="footer__title">Contact Info</h3>
+          <p class="footer__contact">+123 456 7890</p>
+          <p class="footer__contact">info@email.com</p>
+        </div>
+      </div>
+      <div class="creator">
+        Created By <span class="creator-name">Minh Hiếu</span> | All Rights
+        Reserved
+      </div>
+    </section>
+  </body>
+</html>

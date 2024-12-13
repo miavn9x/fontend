@@ -1,0 +1,258 @@
+.menu {
+  padding: 7rem 0;
+  /* background: #F1DEC9; */
+  background: #fff;
+  text-transform: capitalize;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.heading {
+  font-size: 5rem;
+}
+
+.menu select {
+  text-transform: capitalize;
+  font-size: 2rem;
+  border-radius: 2rem;
+}
+
+.menu .card {
+  background: var(--primary-color);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.menu .list-item .item:hover {
+  transform: scale(1.05);
+  transition: transform .5s;
+}
+
+.menu .list-item:hover> :not(:hover) {
+  opacity: .5;
+}
+
+.menu .card img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.menu .item-price,
+.menu .item-name {
+  font-size: 2rem;
+}
+
+.menu .item-name {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu .item-desc {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu .item-desc {
+  min-height: 2.5rem;
+}
+
+.sidebar-menu {
+  text-transform: capitalize;
+}
+
+.sidebar-menu button {
+  border: none;
+  background: transparent;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 1px 1px 1px #D0B8A8;
+  font-size: 2rem;
+}
+
+.sidebar-menu button:hover {
+  color: #AF8F6F;
+}
+
+.sidebar-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-menu-lv2 {
+  margin-left: 2rem;
+}
+
+/* btn-cart */
+.btn-cart {
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  padding: 0.8rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 2.5rem;
+  color: var(--main-bg-color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn-cart:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Icon inside btn-cart */
+.btn-cart i {
+  color: var(--main-bg-color-dark);
+}
+
+/* cart-count */
+.cart-count {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transform: translate(50%, -50%);
+  background-color: #ff4c4c;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0.2em 0.5em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  min-width: 24px;
+  height: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .btn-cart {
+    bottom: 10%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+  }
+
+  .cart-count {
+    font-size: 1rem;
+    padding: 0.2em 0.4em;
+    min-width: 20px;
+    height: 20px;
+  }
+}
+
+
+
+/* modal */
+.modal-title {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+.modal-desc {
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: clip;
+  word-wrap: break-word;
+}
+
+/* add-to-cart */
+.cartBtn {
+  width: 155px;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  background-color: rgb(29, 29, 29);
+  box-shadow: 0 20px 30px -7px rgba(27, 27, 27, 0.219);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cart {
+  z-index: 2;
+}
+
+.cartBtn:active {
+  transform: scale(0.96);
+}
+
+.product {
+  position: absolute;
+  width: 12px;
+  border-radius: 3px;
+  content: "";
+  left: 23px;
+  bottom: 23px;
+  opacity: 0;
+  z-index: 1;
+  fill: rgb(211, 211, 211);
+}
+
+.cartBtn:hover .product {
+  animation: slide-in-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0) rotate(-90deg);
+    opacity: 1;
+  }
+}
+
+.cartBtn:hover .cart {
+  animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    padding-top: 6rem;
+  }
+}

@@ -1,0 +1,424 @@
+/* css heder*/
+* {
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.body {
+  background-size: cover;
+}
+
+.box {
+  margin: 0 auto;
+  display: block;
+  width: 1920px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0px auto;
+  background-color: aqua;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+#logo {
+  padding: 9px 0px;
+}
+
+#logo img {
+  max-width: 180px;
+  height: auto;
+  color: #080808;
+}
+
+#input {
+  margin: 10px -10px 0px 20px;
+  font-size: 40px;
+  list-style: none;
+  color: #f8f6f6;
+}
+
+#search {
+  padding: 9px 0px;
+  margin: 18px 0px 0px 0px;
+}
+
+#search img {
+  max-width: 40px;
+  height: auto;
+}
+
+#cart {
+  padding: 9px 0px;
+  margin: 15px 0px 0px 0px;
+  position: relative;
+}
+
+#cart img {
+  max-width: 40px;
+  height: auto;
+}
+
+#main-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main-menu li a {
+  color: rgb(0, 0, 0);
+  display: block;
+  padding: 29px 29px;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+#main-menu li {
+  position: relative;
+}
+
+.sub-menu {
+  background-color: aqua;
+}
+
+#main-menu ul.sub-menu {
+  position: absolute;
+
+  list-style: none;
+  width: 450px;
+  display: none;
+  border: 1px solid #f8f6f6;
+}
+
+#main-menu li:hover>ul.sub-menu {
+  display: block;
+}
+
+#main-menu ul.sub-menu a {
+  border-bottom: solid 1px #f8f6f6;
+}
+
+#main-menu ul.sub-menu li:hover a {
+  color: #ff7504;
+}
+
+#main-menu ul.sub-menu li:last-child a {
+  border: none;
+}
+
+/* thiết lọ boder*/
+#main-menu>li>a {
+  position: relative;
+}
+
+#main-menu>li>a::before {
+  content: "";
+  height: 4px;
+  width: 0px;
+  background: red;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-menu>li:hover>a::before {
+  width: 100%;
+}
+
+#main-menu>li.has-child::after {
+  /* content: "mũi tên"; */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  color: rgb(228, 154, 154);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 30px 0px;
+}
+
+#main-menu>li>a:hover {
+  color: #ff7504;
+}
+
+.content {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  color: #f8f6f6;
+}
+
+#cart-img-center img {
+  width: 40px;
+}
+
+#showcart {
+  margin-top: 20px;
+}
+
+.list {
+  list-style: none;
+  padding: 20px 0px 0px;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.item img {
+  margin: 0px 40px 10px 60px;
+  max-width: 58px;
+}
+
+.item a {
+  text-decoration: none;
+  font-size: 25px;
+  margin: -7px 5px 0px 0px;
+  color: #050505;
+}
+
+.item a:hover {
+  color: #ff7504;
+}
+
+.card-body>a {
+  text-decoration: none;
+}
+
+.card-body h4 {
+  font-size: 28px;
+  color: #ff7504;
+  font-weight: normal;
+}
+
+.card-body p {
+  font-weight: bold;
+  color: red;
+}
+
+.card img:hover {
+  opacity: 0.8;
+}
+
+.item-product>.bg-a {
+  background-color: rgb(207, 0, 0);
+  width: 100%;
+}
+
+.cart {
+  margin: 0 auto;
+  max-width: 80%;
+  font-size: 30px;
+  min-height: 850px;
+}
+
+.cart h2 {
+  text-align: center;
+  color: red;
+}
+
+.cart td>img {
+  margin: 0 auto;
+  max-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.cart td>img:hover {
+  transform: scale(1.2);
+}
+
+.cart input {
+  margin: 0 auto;
+  width: 100px;
+  height: 70px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card button {
+  height: 70px;
+}
+
+section {
+  min-height: 850px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: black;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+button.dongy {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+button.dongy:hover {
+  background-color: #45a049;
+}
+
+.boxtitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.boxcontent {
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: black;
+}
+
+.row.mb10 {
+  margin-bottom: 10px;
+  color: black;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* giỏ hàng */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #999;
+  padding: 10px;
+}
+
+th,
+td {
+  border: 1px #ccc solid;
+  text-align: center;
+}
+
+td div {
+  width: calc(100% - 20px);
+  padding: 0px 10px;
+  text-align: right;
+}
+
+th div {
+  width: calc(100% - 10px);
+  padding: 0px 5px;
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+td img {
+  width: 200px;
+}
+
+form button:hover {
+  transform: scale(1.2);
+}
+
+/* map */
+.map-container {
+  margin: 15px 30px 0px;
+}
+
+/* footer */
+footer {
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 28px;
+  background-color: #0245f0;
+  max-width: 1920px;
+}
+
+footer h4,
+p {
+  color: rgb(0, 0, 0);
+  margin: 20px 0px;
+}
+
+.information,
+.contact {
+  padding: 0px 40px;
+  flex: auto;
+}
+
+.contact>img {
+  margin: 40px 20px 0px 10px;
+  max-width: 50px;
+}
+
+.design {
+  flex: 100%;
+  margin-top: -20px;
+}
+
+.design p {
+  background: rgb(3, 137, 158);
+  color: white;
+  padding: 14px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+}

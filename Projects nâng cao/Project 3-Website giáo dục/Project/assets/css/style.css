@@ -1,0 +1,34 @@
+.navbar-brand__logo {
+    max-width: 130px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.full-width {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.feature-item__image {
+    max-width: 50px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.subscribe {
+    background-image: url(../imgs/subscribe.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.brand-icon__image {
+    max-width: 150px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.blur-fillter {
+    backdrop-filter: blur(8px);
+    background-color: rgb(255, 255, 255 / 30%);
+}

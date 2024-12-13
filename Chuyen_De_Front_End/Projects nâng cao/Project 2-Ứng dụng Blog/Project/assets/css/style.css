@@ -1,0 +1,28 @@
+.custom-nav {
+  backdrop-filter: blur(8px);
+}
+
+:root {
+  --color-start: #0091ff;
+  --color-end: #32cd4c;
+}
+
+.brand-gradient {
+  background: var(--color-start);
+  background: -webkit-linear-gradient(
+    to top,
+    var(--color-start),
+    var(--color-end)
+  );
+  background: linear-gradient(to top, var(--color-start), var(--color-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bannner-holder,
+.main-page-header {
+  background-image: url(../imgs/banner.jpg);
+  background-size: cover;
+  background-position: bottom;
+}

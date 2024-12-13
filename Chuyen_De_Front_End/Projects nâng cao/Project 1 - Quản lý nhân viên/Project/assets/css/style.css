@@ -1,0 +1,32 @@
+:root {
+  --color-primary: #0cf;
+  --color-secondary: #00a347;
+  --text-color: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+.vr {
+  color: var(--text-color);
+}
+
+.brand-gradient {
+  background: var(--color-primary);
+  background: -webkit-linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

@@ -1,0 +1,616 @@
+<section class="menu" id="product">
+  <div class="container-xxl">
+    <div class="row text-center">
+      <h4 class="heading fw-bold">menu</h4>
+    </div>
+    <!-- Responsive Dropdown for Small Screens -->
+    <div class="row d-md-none px-2">
+      <select
+        name="responsive-menu"
+        id="responsive-menu"
+        [(ngModel)]="selectedValue"
+        (change)="applyFilter()"
+        style="background: #f6eee6; padding: 0.5rem"
+      >
+        <option value="">all</option>
+        <option value="coffee">coffee</option>
+        <option value="tea">tea</option>
+        <option value="ice-blend">ice blend</option>
+        <option value="topping">topping</option>
+        <option value="cake">cake</option>
+      </select>
+    </div>
+
+    <!-- Sidebar for Desktop Screens -->
+    <div class="row">
+      <div class="col-md-2 d-none d-md-block mt-5">
+        <aside class="sidebar-menu mt-5 shadow">
+          <ul class="d-flex flex-column gap-3">
+            <li>
+              <button class="sidebar-menu-item" (click)="applyFilter('all')">
+                all
+              </button>
+            </li>
+            <li>
+              <button class="sidebar-menu-item" (click)="applyFilter('coffee')">
+                coffee
+              </button>
+              <ul class="sidebar-menu-lv2 mt-3 d-flex flex-column gap-3">
+                <li>
+                  <button
+                    class="sidebar-menu-item"
+                    (click)="applyFilter('coffee', 'no-milk')"
+                  >
+                    no milk
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="sidebar-menu-item"
+                    (click)="applyFilter('coffee', 'milk')"
+                  >
+                    milk
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="sidebar-menu-item" (click)="applyFilter('tea')">
+                tea
+              </button>
+              <ul class="sidebar-menu-lv2 mt-3 d-flex flex-column gap-3">
+                <li>
+                  <button
+                    class="sidebar-menu-item"
+                    (click)="applyFilter('tea', 'no-milk')"
+                  >
+                    no milk
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="sidebar-menu-item"
+                    (click)="applyFilter('tea', 'milk')"
+                  >
+                    milk
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button
+                class="sidebar-menu-item"
+                (click)="applyFilter('ice-blend')"
+              >
+                ice blend
+              </button>
+            </li>
+            <li>
+              <button
+                class="sidebar-menu-item"
+                (click)="applyFilter('topping')"
+              >
+                topping
+              </button>
+            </li>
+            <li>
+              <button class="sidebar-menu-item" (click)="applyFilter('cake')">
+                cake
+              </button>
+            </li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- Items Display Section -->
+      <div class="col-md-10">
+        <div class="row row-cols-2 row-cols-md-4 px-2 mt-2 g-3 list-item">
+          <div class="col" *ngFor="let item of filteredItems">
+            <div
+              class="card item"
+              (click)="openModal(item)"
+              data-bs-toggle="modal"
+              data-bs-target="#itemModal"
+              style="background: #f6eee6"
+            >
+              <img
+                [src]="
+                  '../../assets/imgs/menu/' +
+                  item.main_group +
+                  '/' +
+                  item.sub_group +
+                  '/' +
+                  item.image
+                "
+                class="card-img-top"
+                alt="{{ item.name }}"
+              />
+              <div class="card-body">
+                <h5 class="card-title item-name fw-bold">{{ item.name }}</h5>
+                <p class="card-text item-price mt-2 text-danger">
+                  <strong>{{ item.price | number : "1.0-0" }} ₫</strong>
+                </p>
+                <p class="card-text item-desc mt-2">{{ item.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Cart Button -->
+    <button class="btn-cart" (click)="toggleCartModal()">
+      <i
+        class="bi bi-cart-plus-fill"
+        style="color: var(--main-bg-color-dark)"
+      ></i>
+      <span *ngIf="cartCount > 0" class="cart-count">{{ cartCount }}</span>
+    </button>
+  </div>
+</section>
+
+<!-- Modal for Item Details -->
+<div
+  class="modal fade"
+  id="itemModal"
+  tabindex="-1"
+  aria-labelledby="itemModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Updated Modal Header Color -->
+      <div class="modal-header" style="background-color: #fff9c4; color: #000">
+        <h5 class="modal-title" id="itemModalLabel">
+          {{ selectedItem?.name }}
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-4 d-flex align-items-center justify-content-center">
+            <img
+              [src]="
+                '../../assets/imgs/menu/' +
+                selectedItem?.main_group +
+                '/' +
+                selectedItem?.sub_group +
+                '/' +
+                selectedItem?.image
+              "
+              class="img-fluid modal-image rounded"
+              alt="{{ selectedItem?.name }}"
+            />
+          </div>
+          <div class="col-8">
+            <p class="modal-desc text-muted mb-3">
+              {{ selectedItem?.description }}
+            </p>
+            <p class="fw-bold display-6">
+              {{ selectedItem?.price | number : "1.0-0" }} ₫
+            </p>
+
+            <!-- Quantity Selection -->
+            <div class="quantity-selector mt-3 d-flex align-items-center">
+              <label
+                for="itemQuantity"
+                class="form-label fw-bold me-2"
+                style="font-size: 2rem"
+                >Quantity:</label
+              >
+              <div class="input-group input-group-sm">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  (click)="decreaseModalQuantity()"
+                  style="font-size: 2rem"
+                >
+                  −
+                </button>
+                <input
+                  id="itemQuantity"
+                  type="number"
+                  class="form-control text-center"
+                  [(ngModel)]="modalQuantity"
+                  (input)="onQuantityInputChange()"
+                  style="font-size: 2rem"
+                  min="1"
+                  max="99"
+                />
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  (click)="increaseModalQuantity()"
+                  style="font-size: 2rem"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between mt-3">
+              <!-- Sugar Level Selection -->
+              <div class="sugar-level me-2 flex-grow-1">
+                <label
+                  for="sugarLevel"
+                  class="form-label fw-bold"
+                  style="font-size: 2rem"
+                  >Sugar Level:</label
+                >
+                <select
+                  id="sugarLevel"
+                  class="form-select"
+                  [(ngModel)]="sugarLevel"
+                  (change)="setSugarLevel(sugarLevel)"
+                  style="font-size: 2rem"
+                >
+                  <option value="no-sugar">No Sugar</option>
+                  <option value="less">Less</option>
+                  <option value="normal">Normal</option>
+                  <option value="extra">Extra</option>
+                </select>
+              </div>
+
+              <!-- Ice Level Selection -->
+              <div class="ice-level ms-2 flex-grow-1">
+                <label
+                  for="iceLevel"
+                  class="form-label fw-bold"
+                  style="font-size: 2rem"
+                  >Ice Level:</label
+                >
+                <select
+                  id="iceLevel"
+                  class="form-select"
+                  [(ngModel)]="iceLevel"
+                  (change)="setIceLevel(iceLevel)"
+                  style="font-size: 2rem"
+                >
+                  <option value="no-ice">No Ice</option>
+                  <option value="less">Less</option>
+                  <option value="normal">Normal</option>
+                  <option value="extra">Extra</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <!-- Updated Button Color -->
+        <button
+          class="btn w-100 py-2"
+          style="background-color: #ffe0b2; color: #000; font-size: 2rem"
+          (click)="addToCart()"
+          data-bs-dismiss="modal"
+        >
+          ADD TO CART
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cart Modal -->
+<div
+  class="modal fade"
+  id="cartModal"
+  tabindex="-1"
+  aria-labelledby="cartModalLabel"
+  aria-hidden="true"
+  [ngClass]="{ show: isCartModalOpen }"
+  [style.display]="isCartModalOpen ? 'block' : 'none'"
+>
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #fff9c4; color: #000">
+        <h5 class="modal-title" id="cartModalLabel">Your Shopping Cart</h5>
+        <button
+          type="button"
+          class="btn-close"
+          (click)="toggleCartModal()"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div *ngIf="cartItems.length === 0" class="text-center py-3">
+          <p class="text-muted" style="font-size: 2rem">Your cart is empty!</p>
+        </div>
+        <div
+          *ngFor="let item of cartItems"
+          class="cart-item d-flex align-items-center mb-3 p-2 border-bottom"
+        >
+          <img
+            [src]="
+              '../../assets/imgs/menu/' +
+              item.main_group +
+              '/' +
+              item.sub_group +
+              '/' +
+              item.image
+            "
+            alt="{{ item.name }}"
+            class="cart-item-image rounded me-3"
+            style="width: 80px; height: 80px; object-fit: cover"
+          />
+          <div class="flex-grow-1">
+            <p class="fw-bold mb-1 text-capitalize">{{ item.name }}</p>
+            <p class="text-muted mb-1">{{ item.price | number : "1.0-0" }} ₫</p>
+            <p class="mb-1" style="font-size: 2rem">
+              Sugar Level:
+              <span class="text-capitalize">{{ item.sugarLevel }}</span>
+            </p>
+            <p style="font-size: 2rem">
+              Ice Level:
+              <span class="text-capitalize">{{ item.iceLevel }}</span>
+            </p>
+          </div>
+          <!-- Quantity Controls -->
+          <div class="quantity-controls ms-3">
+            <div class="input-group input-group-sm">
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                (click)="decreaseQuantity(item)"
+                style="font-size: 2rem"
+              >
+                −
+              </button>
+              <input
+                type="number"
+                class="form-control text-center"
+                [(ngModel)]="item.quantity"
+                (input)="updateCartCount(); calculateTotalPrice()"
+                style="width: 50px; font-size: 2rem"
+              />
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                (click)="increaseQuantity(item)"
+                style="font-size: 2rem"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notes Section -->
+        <div *ngIf="showNotes" class="mt-3">
+          <label
+            for="orderNotes"
+            class="form-label fw-bold"
+            style="font-size: 2rem"
+            >Order Notes:</label
+          >
+          <textarea
+            id="orderNotes"
+            class="form-control"
+            [(ngModel)]="orderNotes"
+            rows="3"
+            style="font-size: 1.6rem"
+            placeholder="Add any special instructions or notes for your order"
+          ></textarea>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-between">
+        <div>
+          <h5 class="mb-0" style="font-size: 2rem">
+            Total Price: {{ totalPrice | number : "1.0-0" }} ₫
+          </h5>
+        </div>
+        <button
+          type="button"
+          class="btn"
+          style="background-color: #ffe0b2; color: #000; font-size: 2rem"
+          (click)="checkout()"
+        >
+          Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Checkout Modal -->
+<div
+  class="modal fade"
+  id="checkoutModal"
+  tabindex="-1"
+  aria-labelledby="checkoutModalLabel"
+  aria-hidden="true"
+  [ngClass]="{ show: isCheckoutModalOpen }"
+  [style.display]="isCheckoutModalOpen ? 'block' : 'none'"
+  style="font-size: 2rem"
+>
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <!-- Updated Modal Header Color -->
+      <div class="modal-header" style="background-color: #fff9c4; color: #000">
+        <h5 class="modal-title" id="checkoutModalLabel">Order Details</h5>
+        <button
+          type="button"
+          class="btn-close"
+          (click)="toggleCheckoutModal()"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Empty Cart Message -->
+        <div *ngIf="isCartEmpty" class="text-center">
+          <p>Your cart is empty. Please add items to proceed with checkout.</p>
+        </div>
+        <!-- Checkout Form -->
+        <div *ngIf="!isCartEmpty">
+          <!-- Choose Service Type -->
+          <div class="mb-4">
+            <label class="form-label">Choose Service Type:</label>
+            <select
+              class="form-select"
+              [(ngModel)]="serviceType"
+              style="font-size: 2rem"
+            >
+              <option value="dineIn">Dine In</option>
+              <option value="delivery">Delivery</option>
+            </select>
+          </div>
+
+          <!-- Dine In Form -->
+          <div *ngIf="serviceType === 'dineIn'">
+            <div class="mb-4">
+              <label class="form-label">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="customerName"
+                placeholder="Enter your name"
+                style="font-size: 2rem"
+              />
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Phone Number:</label>
+              <input
+                type="tel"
+                class="form-control"
+                [(ngModel)]="customerPhone"
+                placeholder="Enter your phone number"
+                style="font-size: 2rem"
+              />
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Payment Method:</label>
+              <select
+                class="form-select"
+                [(ngModel)]="paymentMethod"
+                style="font-size: 2rem"
+              >
+                <option value="cash">Cash</option>
+                <option value="card">Card</option>
+              </select>
+            </div>
+
+            <!-- Bank Transfer Information for Card Payment -->
+            <div *ngIf="paymentMethod === 'card'" class="mb-4">
+              <p><strong>Bank Name:</strong> Coffee Bank</p>
+              <p><strong>Account Number:</strong> 123456789</p>
+              <p><strong>Account Holder:</strong> CozyNook Cafe</p>
+            </div>
+          </div>
+
+          <!-- Delivery Form -->
+          <div *ngIf="serviceType === 'delivery'">
+            <div class="mb-4">
+              <label class="form-label">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="customerName"
+                placeholder="Enter your name"
+                style="font-size: 2rem"
+              />
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Phone Number:</label>
+              <input
+                type="tel"
+                class="form-control"
+                [(ngModel)]="customerPhone"
+                placeholder="Enter your phone number"
+                style="font-size: 2rem"
+              />
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Address:</label>
+              <textarea
+                class="form-control"
+                [(ngModel)]="deliveryAddress"
+                placeholder="Enter your delivery address"
+                style="font-size: 2rem"
+              ></textarea>
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Payment Method:</label>
+              <select
+                class="form-select"
+                [(ngModel)]="paymentMethod"
+                style="font-size: 2rem"
+              >
+                <option value="cash">Cash on Delivery</option>
+                <option value="card">Card</option>
+              </select>
+            </div>
+
+            <!-- Bank Transfer Information for Card Payment -->
+            <div *ngIf="paymentMethod === 'card'" class="mb-4">
+              <p><strong>Bank Name:</strong> Coffee Bank</p>
+              <p><strong>Account Number:</strong> 123456789</p>
+              <p><strong>Account Holder:</strong> CozyNook Cafe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer" *ngIf="!isCartEmpty">
+        <!-- Updated Button Color -->
+        <button
+          type="button"
+          class="btn"
+          style="background-color: #ffe0b2; color: #000; font-size: 2rem"
+          (click)="confirmOrder()"
+        >
+          Confirm Order
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Success Popup -->
+<div
+  class="modal fade"
+  id="successModal"
+  tabindex="-1"
+  aria-labelledby="successModalLabel"
+  aria-hidden="true"
+  [ngClass]="{ show: isSuccessModalOpen }"
+  [style.display]="isSuccessModalOpen ? 'block' : 'none'"
+  style="font-size: 2rem"
+>
+  <div class="modal-dialog modal-dialog-centered modal">
+    <div class="modal-content">
+      <!-- Modal Header with Custom Background -->
+      <div class="modal-header" style="background-color: #fff9c4; color: #000">
+        <h5 class="modal-title" id="successModalLabel">Order Successful</h5>
+        <button
+          type="button"
+          class="btn-close"
+          (click)="closeSuccessModal()"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body text-center">
+        <p>Thank you for your order!</p>
+        <p>
+          Your queue number is: <strong>{{ queueNumber }}</strong>
+        </p>
+      </div>
+
+      <!-- Modal Footer with Button Style -->
+      <div class="modal-footer justify-content-center">
+        <button
+          type="button"
+          class="btn"
+          style="background-color: #ffe0b2; color: #000; font-size: 2rem"
+          (click)="closeSuccessModal()"
+        >
+          OK
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

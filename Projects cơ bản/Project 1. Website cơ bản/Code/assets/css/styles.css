@@ -1,0 +1,197 @@
+body {
+    background-color: gainsboro;
+    color: white;
+    font-family: sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    background-color: white;
+    margin: 0px auto;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav {
+    background-color: teal;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    font-size: small;
+    text-align: center;
+}
+
+.nav__link,
+.nav__submenu-link {
+    display: block;
+    padding: 15px;
+}
+
+.nav__item:hover {
+    background-color: orange;
+}
+
+.nav__item:hover .drop {
+    display: block;
+    z-index: 999;
+}
+
+.nav__item--has-submenu {
+    position: relative;
+}
+
+.nav__submenu {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    display: none;
+}
+
+.nav__submenu-item {
+    width: 120px;
+    background-color: black;
+    font-size: small;
+    text-align: center;
+}
+
+.nav__submenu-item:hover {
+    background-color: orange;
+}
+
+.banner {
+    width: 1000px;
+    height: 650px;
+    overflow: hidden;
+}
+
+.banner__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    object-position: center center;
+}
+
+.banner--slideshow {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner__image.active {
+    opacity: 1;
+}
+
+.main .container {
+    display: flex;
+    align-items: center;
+}
+
+.article {
+    width: 70%;
+    padding: 25px;
+    background-color: white;
+    color: black;
+}
+
+.article__title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.article__content {
+    margin-top: 20px;
+    font-size: small;
+}
+
+.sidebar {
+    width: 30%;
+    padding: 25px;
+    background-color: royalblue;
+    color: white;
+}
+
+.sidebar__title {
+    font-size: 1.5em;
+}
+
+.sidebar__list {
+    margin-top: 5px;
+
+}
+
+.sidebar__item {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sidebar__item a {
+    font-style: italic;
+    font-size: small;
+}
+
+.footer .container {
+    background-color: black;
+
+}
+
+.footer__content {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__title,
+.footer__contact-name {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer__list {
+    margin-left: 10px;
+}
+
+.footer__item {
+    margin-top: 5px;
+}
+
+.footer__link {
+    font-size: small;
+}
+
+.footer__contact-address-text,
+.footer__contact-email,
+.footer__contact-phone {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.footer__contact-email-link,
+.footer__contact-phone-link {
+    color: teal;
+    text-decoration: underline;
+}
+
+.copyright .container {
+    max-width: 950px;
+    text-align: center;
+    padding: 25px;
+    background-color: crimson;
+}

@@ -1,0 +1,17 @@
+@media (max-width: 1024px) {
+  .about-img {
+    max-width: 90%;
+  }
+
+  .about-content {
+    max-width: 95%;
+    text-align: center;
+    gap: 1rem !important;
+    margin: 3rem auto 0;
+    align-items: center;
+  }
+
+  .about-desc {
+    text-align: justify;
+  }
+}

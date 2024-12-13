@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catigories</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-md bg-white small border-bottom shadow-sm fixed-top custom-nav"
+      style="--bs-bg-opacity: 0.9"
+    >
+      <div class="container">
+        <a href="./index.html" class="navbar-brand">
+          <span class="brand-style brand-gradient">BLOG 2.0</span>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#blog-navbar"
+          aria-controls="blog-navbar"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="blog-navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./catigories.html">
+                Categories
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./posts.html">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./page.html">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./search.html">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./default.html">Default</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input
+                type="search"
+                name="navbar-search"
+                id="navbar-search"
+                class="form-control form-control-sm"
+                placeholder="Search for..."
+              />
+              <button type="submit" class="btn btn-sm btn-success">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header class="main-page-header py-5 mb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="page-header-holder mt-5 text-white">
+              <h1 class="fs-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Fugiat, similique!
+              </h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Provident maxime iure modi sint numquam quibusdam dolor
+                voluptates fugit sed reiciendis laborum inventore reprehenderit
+                adipisci deleniti, a recusandae cumque animi doloribus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Post Loop -->
+    <section class="post-loop py-3 mb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="list-group mb-3">
+              <a
+                href="./posts.html"
+                class="list-group-item list-group-item-action text-dark"
+              >
+                <article class="row align-items-center">
+                  <figure class="col-md-3">
+                    <img
+                      src="./assets/imgs/category-image.jpg"
+                      class="img-fluid rounded"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="col-md-9">
+                    <h3 class="fs-5 mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </h3>
+                    <p class="fw-light small">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsam corrupti aperiam sunt neque voluptatibus dolor modi
+                      minus nesciunt quo beatae ex natus quasi veniam, dolore
+                      ipsum voluptate doloribus unde deleniti facilis id. Eius,
+                      omnis eum?
+                    </p>
+                    <p class="text-secondary small">
+                      <strong>Category: </strong> Some Category
+                      <strong>Posted on: </strong> 29th July 2022
+                    </p>
+                  </div>
+                </article>
+              </a>
+              <a
+                href="./posts.html"
+                class="list-group-item list-group-item-action text-dark"
+              >
+                <article class="row align-items-center">
+                  <figure class="col-md-3">
+                    <img
+                      src="./assets/imgs/category-image.jpg"
+                      class="img-fluid rounded"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="col-md-9">
+                    <h3 class="fs-5 mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </h3>
+                    <p class="fw-light small">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsam corrupti aperiam sunt neque voluptatibus dolor modi
+                      minus nesciunt quo beatae ex natus quasi veniam, dolore
+                      ipsum voluptate doloribus unde deleniti facilis id. Eius,
+                      omnis eum?
+                    </p>
+                    <p class="text-secondary small">
+                      <strong>Category: </strong> Some Category
+                      <strong>Posted on: </strong> 29th July 2022
+                    </p>
+                  </div>
+                </article>
+              </a>
+              <a
+                href="./posts.html"
+                class="list-group-item list-group-item-action text-dark"
+              >
+                <article class="row align-items-center">
+                  <figure class="col-md-3">
+                    <img
+                      src="./assets/imgs/category-image.jpg"
+                      class="img-fluid rounded"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="col-md-9">
+                    <h3 class="fs-5 mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </h3>
+                    <p class="fw-light small">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsam corrupti aperiam sunt neque voluptatibus dolor modi
+                      minus nesciunt quo beatae ex natus quasi veniam, dolore
+                      ipsum voluptate doloribus unde deleniti facilis id. Eius,
+                      omnis eum?
+                    </p>
+                    <p class="text-secondary small">
+                      <strong>Category: </strong> Some Category
+                      <strong>Posted on: </strong> 29th July 2022
+                    </p>
+                  </div>
+                </article>
+              </a>
+              <a
+                href="./posts.html"
+                class="list-group-item list-group-item-action text-dark"
+              >
+                <article class="row align-items-center">
+                  <figure class="col-md-3">
+                    <img
+                      src="./assets/imgs/category-image.jpg"
+                      class="img-fluid rounded"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="col-md-9">
+                    <h3 class="fs-5 mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </h3>
+                    <p class="fw-light small">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsam corrupti aperiam sunt neque voluptatibus dolor modi
+                      minus nesciunt quo beatae ex natus quasi veniam, dolore
+                      ipsum voluptate doloribus unde deleniti facilis id. Eius,
+                      omnis eum?
+                    </p>
+                    <p class="text-secondary small">
+                      <strong>Category: </strong> Some Category
+                      <strong>Posted on: </strong> 29th July 2022
+                    </p>
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-bg-primary mb-3">
+              <div class="card-body">
+                <h3 class="fs-4">Subcrise For Newsletters</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis amet blanditiis est explicabo repellendus
+                  sapiente!
+                </p>
+                <form>
+                  <div class="row gx-2">
+                    <div class="col-md-6">
+                      <div class="mb-2">
+                        <input
+                          type="text"
+                          name="first-name"
+                          id="first-name"
+                          class="form-control form-control-sm"
+                          placeholder="First Name"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-2">
+                        <input
+                          type="text"
+                          name="last-name"
+                          id="last-name"
+                          class="form-control form-control-sm"
+                          placeholder="Last Name"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="mb-2">
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          class="form-control form-control-sm"
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="d-grid">
+                        <button type="submit" class="btn btn-success btn-sm">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-envelope-check-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"
+                            />
+                            <path
+                              d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"
+                            />
+                          </svg>
+                          Subcrise
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <ul class="list-group small mb-3">
+              <li class="list-group-item active">Archives</li>
+              <li class="list-group-item list-group-item-action text-dark">
+                <a href="#" class="text-decoration-none text-dark">2019</a>
+              </li>
+              <li class="list-group-item list-group-item-action text-dark">
+                <a href="#" class="text-decoration-none text-dark">2020</a>
+              </li>
+              <li class="list-group-item list-group-item-action text-dark">
+                <a href="#" class="text-decoration-none text-dark">2021</a>
+              </li>
+              <li class="list-group-item list-group-item-action text-dark">
+                <a href="#" class="text-decoration-none text-dark">2022</a>
+              </li>
+            </ul>
+            <ul class="list-group small mb-3">
+              <li class="list-group-item active">Categories</li>
+              <li class="list-group-item list-group-item-action text-dark">
+                <a href="#" class="text-decoration-none text-dark">
+                  Technology
+                </a>
+              </li>
+              <li class="list-group-item list-group-item-action text-dark">
+                <a href="#" class="text-decoration-none text-dark">Fashion</a>
+              </li>
+              <li class="list-group-item list-group-item-action text-dark">
+                <a href="#" class="text-decoration-none text-dark">Modern</a>
+              </li>
+              <li class="list-group-item list-group-item-action text-dark">
+                <a href="#" class="text-decoration-none text-dark">Antique</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="main-footer text-bg-dark p-4 text-center">
+      <div class="container">
+        <p class="m-0">
+          <small>Copyright &copy; 2024. All Rights Reseverd</small>
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+#navbar {
+  text-transform: capitalize;
+  background: #fff0d1e6;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  font-family: 'Great Vibes', cursive;
+  color: #3B3030;
+  text-shadow: 1px 1px 2px var(--primary-color);
+}
+
+.navbar-brand:hover {
+  color: var(--sub-color);
+}
+
+.toggle-icon {
+  font-size: 3rem;
+  color: var(--sub-color);
+}
+
+.nav-item {
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.nav-item:hover .nav-link,
+.active {
+  text-shadow: 1px 1px 2px #795757;
+}
+
+.nav-link {
+  color: #3B3030;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px var(--primary-color);
+}
+
+/* login-btn */
+.login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--sub-color);
+  text-shadow: 1px 1px 1px #AF8F6F;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0 #000;
+  transition: all 0.1s ease-out;
+  padding: .5rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      #F8F4E1,
+      transparent);
+  z-index: 1;
+  transition: none;
+  opacity: 0;
+}
+
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.login-btn:hover::before {
+  opacity: 1;
+  animation: slide 2s infinite;
+}
+
+.login-btn:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 5px 5px 0 #000;
+  background-color: var(--primary-color);
+  color: var(--sub-color);
+}
+
+.login-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: 5px 5px 0 #000;
+  background-color: var(--primary-color);
+  color: var(--sub-color);
+}
+
+.login-btn-text {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-out;
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+}
+
+.login-btn:hover .login-btn-text {
+  transform: skew(-5deg);
+}
+
+@media (max-width: 768px) {
+  .login-btn {
+    margin: 1rem auto 0;
+  }
+
+  .navbar-nav {
+    max-width: 100dvw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: max-content;
+  }
+
+  .nav-item {
+    cursor: pointer;
+    padding: 2rem;
+  }
+
+  .navbar-brand {
+    margin: 0 auto;
+  }
+}

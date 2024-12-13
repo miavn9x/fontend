@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+.vr {
+    color: white;
+}
+
+.brand-gradient {
+    background: #0cf;
+    background: -webkit-linear-gradient(to right, #0cf, #00a347);
+    background: linear-gradient(to right, #0cf, #00a347);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

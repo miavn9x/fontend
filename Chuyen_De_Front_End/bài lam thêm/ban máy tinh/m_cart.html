@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nguyễn Thanh Tùng _514230566</title>
+  <link rel="stylesheet" href="./css/cart.css" />
+</head>
+
+<body>
+  <div class="box">
+    <!-- html đầu  trang -->
+    <div class="header">
+      <nav class="container">
+        <a href="index.html" id="logo">
+          <img src="images/logo2.png" alt="" />
+        </a>
+        <ul id="main-menu">
+          <li><a href="index.html">TRANG CHỦ</a></li>
+          <li>
+            <a href="index.html"> MÁY TÍNH BÀN </a>
+            <ul class="sub-menu">
+              <li><a href="index.html">PC VĂN PHÒNG</a></li>
+              <li><a href="index.html">PC GAMING</a></li>
+              <li><a href="index.html">PC GIẢ LẬP</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="index.html"> LAPTOP&nbsp;</a>
+            <ul class="sub-menu">
+              <li><a href="index.html">LAPTOP VĂN PHÒNG</a></li>
+              <li><a href="index.html">LAPTOP GAMING</a></li>
+              <li><a href="index.html">MACBOOK</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="index.html"> PHẦN MỀM &nbsp; &nbsp; </a>
+            <ul class="sub-menu">
+              <li><img src="" alt="" /><a href="index.html">PHẦN MỀM VĂN PHÒNG</a></li>
+              <li><a href="index.html">PHẦN MỀM ĐỒ HỌA</a></li>
+            </ul>
+          </li>
+
+          <li><a href="index.html">LIÊN HỆ</a></li>
+        </ul>
+        <li id="input"><input type="text" /></li>
+        <a href="" id="search">
+          <img src="images/search1.png" alt="" />
+        </a>
+
+        <div id="showcart">
+          <a id="cart-img-center" href="">
+            <img src="images/cart.png" alt="" />
+          </a>
+        </div>
+      </nav>
+    </div>
+    <!-- gio hangg -->
+    <section class="cart">
+
+      <h2>GIỎ HÀNG</h2>
+      <form action="">
+        <table style="font-size: 25px;">
+          <thead>
+            <tr style="font-size: 25px;">
+              <th style="width: 300px;">HÌNH ẢNH SẢN PHẨM</th>
+              <th style="width: 500px;">TÊN SẢN PHẨM</th>
+              <th>GIÁ SẢN PHẨM</th>
+              <th>SỐ LƯỢNG</th>
+              <th style="height: 70px;width: 300px;">CHỌN</th>
+            </tr>
+          </thead>
+          <tbody id="cart-body">
+            <!-- thanh toan -->
+          </tbody>
+        </table>
+        <div style="text-align: right;" class="price-total">
+          <p style="font-weight: bold;">Tổng Tiền: <span>0</span> <sup>đ</sup></p>
+        </div>
+        <div style="text-align: right;">
+          <button style="width: 230px;height: 70px;font-size: 25px;background-color: rgb(222, 47, 47); color: #ffffff;"
+            type="button" class="checkout-btn" onclick="checkout()">Thanh Toán</button>
+        </div>
+      </form>
+    </section>
+    <!-- chan trang -->
+    <footer class="footer">
+      <div class="information">
+        <h4 style="font-size: 25px;">THÔNG TIN</h4>
+        <p>Mía VN Computer</p>
+        <p>12 Trịnh Đình Thảo, Q.Tân Phú</p>
+        <p>0963 441 xxx</p>
+      </div>
+      <!-- liên hệ -->
+      <div class="contact">
+        <h4>LIÊN HỆ</h4>
+        <label for="">Email:</label>
+        <input type="email" name="" id="" />
+        <button>SEND</button>
+        <br />
+        <img src="images/fb.png" alt="" />
+        <img src="images/zalo.png" alt="" />
+        <img src="images/ytb.png" alt="" />
+      </div>
+      <!-- google map -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.063501050061!2d106.6319245!3d10.7750496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ea168a65c0b%3A0x2a4a7dc43e177de1!2zMTIgVHLhu4tuaCDEkMOsbmggVGjhuqFvLCBUw6JuIFBodSwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1sen!2s!4v1593673916670!5m2!1sen!2s"
+          width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0">
+        </iframe>
+      </div>
+      <div class="design">
+        <p>Design by Mía VN - &#169;No copyright 2024</p>
+      </div>
+    </footer>
+    <script src="./SCRIPT/cart.js"></script>
+
+</body>
+
+</html>

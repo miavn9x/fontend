@@ -1,0 +1,353 @@
+[
+  {
+    "id": "conm1",
+    "main_group": "coffee",
+    "sub_group": "no-milk",
+    "name": "americano",
+    "price": 25000,
+    "description": "A robust and smooth coffee made by diluting espresso with hot water, offering a rich flavor without bitterness.",
+    "image": "americano.webp"
+  },
+  {
+    "id": "conm2",
+    "main_group": "coffee",
+    "sub_group": "no-milk",
+    "name": "black coffee",
+    "price": 20000,
+    "description": "Freshly brewed coffee with a bold and intense taste, perfect for coffee lovers who appreciate pure coffee flavor.",
+    "image": "black-coffee.webp"
+  },
+  {
+    "id": "conm3",
+    "main_group": "coffee",
+    "sub_group": "no-milk",
+    "name": "cold brew",
+    "price": 22000,
+    "description": "Smooth, refreshing coffee made by steeping grounds in cold water for a low-acidity, full-bodied taste.",
+    "image": "cold-brew.webp"
+  },
+  {
+    "id": "conm4",
+    "main_group": "coffee",
+    "sub_group": "no-milk",
+    "name": "espresso",
+    "price": 23000,
+    "description": "A concentrated coffee with a rich, bold flavor, served in a small shot, perfect for a quick energy boost.",
+    "image": "espresso.webp"
+  },
+  {
+    "id": "comi1",
+    "main_group": "coffee",
+    "sub_group": "milk",
+    "name": "cappuccino",
+    "price": 30000,
+    "description": "A classic Italian coffee with equal parts espresso, steamed milk, and foam, offering a creamy and rich taste.",
+    "image": "cappuccino.webp"
+  },
+  {
+    "id": "comi3",
+    "main_group": "coffee",
+    "sub_group": "milk",
+    "name": "coffee latte",
+    "price": 22000,
+    "description": "A smooth coffee with steamed milk, providing a creamy texture and a mild, balanced coffee flavor.",
+    "image": "coffee-latte.webp"
+  },
+  {
+    "id": "comi4",
+    "main_group": "coffee",
+    "sub_group": "milk",
+    "name": "macchiato",
+    "price": 22000,
+    "description": "A shot of espresso with a small amount of steamed milk, creating a rich, strong coffee taste with a hint of creaminess.",
+    "image": "macchiato.webp"
+  },
+  {
+    "id": "comi5",
+    "main_group": "coffee",
+    "sub_group": "milk",
+    "name": "milk coffee",
+    "price": 22000,
+    "description": "A simple blend of coffee and milk, offering a smooth, creamy texture and a mild coffee flavor.",
+    "image": "milk-coffee.webp"
+  },
+  {
+    "id": "coim9",
+    "main_group": "coffee",
+    "sub_group": "milk",
+    "name": "mocha",
+    "price": 22000,
+    "description": "A delicious combination of espresso, chocolate, and steamed milk, creating a sweet, rich, and creamy coffee experience.",
+    "image": "mocha.webp"
+  },
+  {
+    "id": "icic1",
+    "main_group": "ice-blend",
+    "sub_group": "ice-blend",
+    "name": "cappuccino ice blend",
+    "price": 22000,
+    "description": "A refreshing iced version of cappuccino, blending espresso with milk and ice for a cool, creamy coffee treat.",
+    "image": "cappuccino-ice-blend.webp"
+  },
+  {
+    "id": "icic2",
+    "main_group": "ice-blend",
+    "sub_group": "ice-blend",
+    "name": "caramel latte ice blend",
+    "price": 22000,
+    "description": "An iced coffee treat with espresso, milk, and caramel syrup, delivering a sweet and creamy flavor.",
+    "image": "caramel-latte-ice-blend.webp"
+  },
+  {
+    "id": "icic3",
+    "main_group": "ice-blend",
+    "sub_group": "ice-blend",
+    "name": "chocolate espresso ice blend",
+    "price": 22000,
+    "description": "A rich mix of espresso and chocolate, blended with ice for a decadent, refreshing coffee experience.",
+    "image": "chocolate-espresso-ice-blend.webp"
+  },
+  {
+    "id": "tenm1",
+    "main_group": "tea",
+    "sub_group": "no-milk",
+    "name": "happy tea",
+    "price": 22000,
+    "description": "A refreshing blend of tea with bright, fruity flavors, bringing a touch of happiness to every sip.",
+    "image": "happy-tea.webp"
+  },
+  {
+    "id": "tenm2",
+    "main_group": "tea",
+    "sub_group": "no-milk",
+    "name": "lucky tea",
+    "price": 22000,
+    "description": "A delightful tea blend with herbal and fruity notes, perfect for a refreshing and uplifting experience.",
+    "image": "lucky-tea.webp"
+  },
+  {
+    "id": "tenm3",
+    "main_group": "tea",
+    "sub_group": "no-milk",
+    "name": "lychee tea",
+    "price": 22000,
+    "description": "A light, fruity tea with a sweet lychee flavor, offering a refreshing taste that’s both delicate and exotic.",
+    "image": "lychee-tea.webp"
+  },
+  {
+    "id": "tenm4",
+    "main_group": "tea",
+    "sub_group": "no-milk",
+    "name": "peach tea",
+    "price": 22000,
+    "description": "A sweet and fragrant tea with a refreshing peach flavor, perfect for a relaxing and fruity treat.",
+    "image": "peach-tea.webp"
+  },
+  {
+    "id": "temi1",
+    "main_group": "tea",
+    "sub_group": "milk",
+    "name": "chocolate milk tea",
+    "price": 22000,
+    "description": "A creamy milk tea with rich chocolate flavor, blending the sweetness of chocolate with the smoothness of milk.",
+    "image": "chocolate-milk-tea.webp"
+  },
+  {
+    "id": "temi2",
+    "main_group": "tea",
+    "sub_group": "milk",
+    "name": "lychee milk tea",
+    "price": 22000,
+    "description": "A refreshing milk tea with a sweet lychee twist, blending fruitiness with creamy, smooth milk.",
+    "image": "lychee-milk-tea.webp"
+  },
+  {
+    "id": "temi3",
+    "main_group": "tea",
+    "sub_group": "milk",
+    "name": "matcha latte",
+    "price": 22000,
+    "description": "A creamy, green tea latte with rich matcha flavor, providing a smooth and earthy taste in every sip.",
+    "image": "matcha-latte.webp"
+  },
+  {
+    "id": "temi4",
+    "main_group": "tea",
+    "sub_group": "milk",
+    "name": "milk tea",
+    "price": 22000,
+    "description": "A smooth and creamy blend of tea and milk, offering a mild and satisfying flavor.",
+    "image": "milk-tea.webp"
+  },
+  {
+    "id": "temi5",
+    "main_group": "tea",
+    "sub_group": "milk",
+    "name": "peach milk tea",
+    "price": 22000,
+    "description": "A creamy milk tea with a hint of peach, blending fruity and creamy flavors for a delightful taste.",
+    "image": "peach-milk-tea.webp"
+  },
+  {
+    "id": "tpjb1",
+    "main_group": "topping",
+    "sub_group": "jelly-boba",
+    "name": "black tapioca pearls",
+    "price": 22000,
+    "description": "Classic chewy tapioca pearls, adding texture and sweetness to your favorite beverages.",
+    "image": "black-tapioca-pearls.webp"
+  },
+  {
+    "id": "tpjb2",
+    "main_group": "topping",
+    "sub_group": "jelly-boba",
+    "name": "white tapioca pearls",
+    "price": 22000,
+    "description": "Soft and chewy tapioca pearls, perfect for adding texture to drinks with a subtle sweetness.",
+    "image": "white-tapioca-pearls.webp"
+  },
+  {
+    "id": "tpjb3",
+    "main_group": "topping",
+    "sub_group": "jelly-boba",
+    "name": "golden boba",
+    "price": 22000,
+    "description": "A premium boba with a hint of sweetness, adding a golden touch to your beverage experience.",
+    "image": "golden-boba.webp"
+  },
+  {
+    "id": "tpjb4",
+    "main_group": "topping",
+    "sub_group": "jelly-boba",
+    "name": "jelly cubes",
+    "price": 22000,
+    "description": "Soft and bouncy jelly cubes, bringing a fun texture and slight sweetness to your drink.",
+    "image": "jelly-cubes.webp"
+  },
+  {
+    "id": "tpjb5",
+    "main_group": "topping",
+    "sub_group": "jelly-boba",
+    "name": "taro balls",
+    "price": 22000,
+    "description": "Deliciously chewy taro balls, adding a unique, earthy flavor and texture to your beverage.",
+    "image": "taro-balls.webp"
+  },
+  {
+    "id": "tppu1",
+    "main_group": "topping",
+    "sub_group": "pudding",
+    "name": "chocolate pudding",
+    "price": 22000,
+    "description": "Creamy chocolate pudding, adding a smooth, rich chocolate flavor to your drink.",
+    "image": "chocolate-pudding.webp"
+  },
+  {
+    "id": "tppu2",
+    "main_group": "topping",
+    "sub_group": "pudding",
+    "name": "egg pudding",
+    "price": 22000,
+    "description": "Silky egg pudding with a light sweetness, adding a creamy texture to your favorite drinks.",
+    "image": "egg-pudding.webp"
+  },
+  {
+    "id": "tppu3",
+    "main_group": "topping",
+    "sub_group": "pudding",
+    "name": "matcha pudding",
+    "price": 22000,
+    "description": "A smooth matcha-flavored pudding, adding a mild, earthy taste to your beverage.",
+    "image": "matcha-pudding.webp"
+  },
+  {
+    "id": "tpot1",
+    "main_group": "topping",
+    "sub_group": "other",
+    "name": "marshmallows",
+    "price": 22000,
+    "description": "Fluffy, sweet marshmallows, offering a light and airy texture with a touch of sweetness.",
+    "image": "marshmallows.webp"
+  },
+  {
+    "id": "tpot2",
+    "main_group": "topping",
+    "sub_group": "other",
+    "name": "milk foarm",
+    "price": 22000,
+    "description": "Smooth milk foam for an extra layer of creaminess and texture on top of your drink.",
+    "image": "milk-foarm.webp"
+  },
+  {
+    "id": "caca1",
+    "main_group": "cake",
+    "sub_group": "cake",
+    "name": "butter croissant",
+    "price": 22000,
+    "description": "A flaky, buttery pastry with a golden crust, offering a delightful texture and rich flavor.",
+    "image": "butter-croissant.webp"
+  },
+  {
+    "id": "caca2",
+    "main_group": "cake",
+    "sub_group": "cake",
+    "name": "chocolate cookie",
+    "price": 22000,
+    "description": "A rich and chewy chocolate cookie with a deep chocolate flavor, perfect for chocolate lovers.",
+    "image": "chocolate-cookie.webp"
+  },
+  {
+    "id": "caca3",
+    "main_group": "cake",
+    "sub_group": "cake",
+    "name": "matcha cookie",
+    "price": 22000,
+    "description": "A soft, earthy cookie with a rich matcha flavor, offering a unique twist on classic flavors.",
+    "image": "matcha-cookie.webp"
+  },
+  {
+    "id": "caca4",
+    "main_group": "cake",
+    "sub_group": "cake",
+    "name": "mochi",
+    "price": 22000,
+    "description": "A chewy Japanese treat with a soft, sticky texture, offering a variety of flavors in every bite.",
+    "image": "mochi.webp"
+  },
+  {
+    "id": "caca5",
+    "main_group": "cake",
+    "sub_group": "cake",
+    "name": "egg tart",
+    "price": 22000,
+    "description": "A light, flaky pastry with a creamy, custard-like egg filling, delivering a warm and sweet flavor.",
+    "image": "egg-tart.webp"
+  },
+  {
+    "id": "caca6",
+    "main_group": "cake",
+    "sub_group": "cake",
+    "name": "passion panna cotta",
+    "price": 22000,
+    "description": "A creamy, smooth panna cotta with a hint of passion fruit, offering a refreshing and tropical flavor.",
+    "image": "passion-panna-cotta.webp"
+  },
+  {
+    "id": "caca7",
+    "main_group": "cake",
+    "sub_group": "cake",
+    "name": "flan",
+    "price": 22000,
+    "description": "A creamy, caramelized custard with a smooth texture and sweet flavor, perfect as a dessert treat.",
+    "image": "flan.webp"
+  },
+  {
+    "id": "caca8",
+    "main_group": "cake",
+    "sub_group": "cake",
+    "name": "tiramisu",
+    "price": 22000,
+    "description": "A classic Italian dessert with layers of coffee-soaked ladyfingers and creamy mascarpone, dusted with cocoa.",
+    "image": "tiramisu.webp"
+  }
+]

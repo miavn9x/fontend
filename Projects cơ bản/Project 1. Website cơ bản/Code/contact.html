@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Contact - Project 1 - Website cơ bản</title>
+    <!-- Liên kết đến reset CSS  và styles CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+  </head>
+
+  <body>
+    <!-- Phần Header -->
+    <header class="header">
+      <div class="container">
+        <!-- Phần Logo -->
+        <div class="header__top">
+          <figure class="header__logo">
+            <a href="./index.html" class="header__logo-link">
+              <img
+                src="./assets/images/logo.png"
+                alt="logo"
+                class="header__logo-image"
+              />
+            </a>
+          </figure>
+          <!-- Form tìm kiếm -->
+          <form action="" method="get" class="header__search-form">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              class="header__search-input"
+              placeholder="Search site..."
+            />
+            <input type="submit" value=">" class="header__search-submit" />
+          </form>
+        </div>
+        <!-- Menu điều hướng -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <!-- Các liên kết điều hướng -->
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="./about.html" class="nav__link">About</a>
+            </li>
+            <li class="nav__item nav__item--has-submenu">
+              <a href="./services/service-one.html" class="nav__link"
+                >Services</a
+              >
+              <!-- Menu phụ dưới mục Services -->
+              <ul class="nav__submenu drop">
+                <li class="nav__submenu-item">
+                  <a
+                    href="./services/service-one.html"
+                    class="nav__submenu-link"
+                    >Service One</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="./services/service-two.html"
+                    class="nav__submenu-link"
+                    >Service Two</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="./services/service-three.html"
+                    class="nav__submenu-link"
+                    >Service Three</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="./product.html" class="nav__link">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="./contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="banner">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.473549604476!2d106.63442599999999!3d10.7749966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ea144839ef1%3A0x798819bdcd0522b0!2zQ2FvIMSQ4bqzbmcgQ8O0bmcgTmdo4buHIFRow7RuZyBUaW4gVFAuSENN!5e0!3m2!1svi!2s!4v1725722028058!5m2!1svi!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+      </div>
+    </header>
+    <!-- Phần Main -->
+    <main class="main">
+      <div class="container">
+        <!-- Phần Blog -->
+        <article class="article">
+          <h1 class="article__title">
+            Lorem, ipsum dolor sit amet consectetur.
+          </h1>
+          <p class="article__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            optio soluta eum eaque ea ratione, facilis sapiente at tenetur non
+            aspernatur! Provident, omnis deleniti id mollitia porro dolorum
+            cupiditate voluptas incidunt amet temporibus? Reprehenderit mollitia
+            suscipit est pariatur sapiente, dicta, rem earum expedita et ratione
+            animi distinctio blanditiis quidem perspiciatis?
+          </p>
+          <div class="contact-form">
+            <form action="" method="get">
+              <table>
+                <tr>
+                  <td><label for="c_name">Name: </label></td>
+                  <td>
+                    <input type="text" name="c_name" id="c_name" required />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="c_email">Email: </label></td>
+                  <td>
+                    <input type="email" name="c_email" id="c_email" required />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="c_tel">Phone: </label></td>
+                  <td>
+                    <input type="tel" name="c_tel" id="c_tel" required />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="c_sub">Subject: </label></td>
+                  <td>
+                    <input type="text" name="c_sub" id="c_sub" required />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="align-content: center">
+                    <label for="c_mess">Message: </label>
+                  </td>
+                  <td>
+                    <textarea
+                      name="c_mess"
+                      id="c_mess"
+                      cols="30"
+                      rows="5"
+                    ></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <input type="submit" value="Send Message" name="c_send" />
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </article>
+        <!-- Phần Sidebar -->
+        <aside class="sidebar">
+          <h3 class="sidebar__title">Widget</h3>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a href="" class="sidebar__link">2018</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="" class="sidebar__link">2019</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="" class="sidebar__link">2020</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <!-- Phần Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <!-- Các phần trong Footer: Menu và Thông tin liên hệ -->
+          <div class="footer__section">
+            <h3 class="footer__title">Footer Menu</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="./index.html" class="footer__link">Home</a>
+              </li>
+              <li class="footer__item">
+                <a href="./about.html" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="./services/service-one.html" class="footer__link"
+                  >Services</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="./product.html" class="footer__link">Product</a>
+              </li>
+              <li class="footer__item">
+                <a href="./contact.html" class="footer__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__section">
+            <h3 class="footer__title">Footer Menu</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="./index.html" class="footer__link">Home</a>
+              </li>
+              <li class="footer__item">
+                <a href="./about.html" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="./services/service-one.html" class="footer__link"
+                  >Services</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="./product.html" class="footer__link">Product</a>
+              </li>
+              <li class="footer__item">
+                <a href="./contact.html" class="footer__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__section">
+            <h3 class="footer__title">Footer Menu</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="./index.html" class="footer__link">Home</a>
+              </li>
+              <li class="footer__item">
+                <a href="./about.html" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="./services/service-one.html" class="footer__link"
+                  >Services</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="./product.html" class="footer__link">Product</a>
+              </li>
+              <li class="footer__item">
+                <a href="./contact.html" class="footer__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contact">
+            <address class="footer__contact-address">
+              <h3 class="footer__contact-name">Company Name</h3>
+              <p class="footer__contact-address-text">
+                #100, Someplace, Somewhere far, 54654
+              </p>
+              <p class="footer__contact-email">
+                Email:
+                <a
+                  href="mailto:contact@someone.com"
+                  class="footer__contact-email-link"
+                >
+                  contact@someone.com
+                </a>
+              </p>
+              <p class="footer__contact-phone">
+                Phone:
+                <a href="tel:1234567890" class="footer__contact-phone-link">
+                  1234567890
+                </a>
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <div class="container">
+        <p><small>Copyright &copy; 2024. All Rights Reserved.</small></p>
+      </div>
+    </div>
+  </body>
+</html>

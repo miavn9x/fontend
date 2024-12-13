@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container-fluid">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-light fixed-top bodder-bottom small blur-fillter"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./assets/imgs/Prime-Inspire-Logo.svg"
+            alt="Prime Inspire Logo"
+            class="navbar-brand__logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./course.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="ms-auto me-1 d-grid d-md-block gap-2 mb-2 mb-md-0">
+            <a
+              href="#"
+              class="btn btn-sm btn-danger align-items-center d-inline-flex text-center justify-content-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-plus-fill me-1"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"
+                />
+              </svg>
+              Sign-up For Free
+            </a>
+            <a
+              href="#"
+              class="btn btn-sm btn-warning align-items-center d-inline-flex text-center justify-content-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-box-arrow-in-right me-1"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+                />
+              </svg>
+              Login
+            </a>
+          </div>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input
+                class="form-control form-control-sm"
+                type="search"
+                placeholder="Search for..."
+                aria-label="Search for..."
+              />
+              <button class="btn btn-outline-success" type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header class="main-header py-5 border-bottom">
+      <div class="container-fluid">
+        <div class="row align-items-center gx-md-5">
+          <div class="col-md-6">
+            <div class="home-header-text-holder pe-md-5">
+              <h1 class="fs-3 fw-normal">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Corporis, quasi.
+              </h1>
+              <h2 class="fs-5 fw-light text-secondary">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Blanditiis accusantium porro similique, enim sequi amet tempore
+                quasi exercitationem sit hic.
+              </h2>
+              <p class="d-inline-flex align-items-center">
+                <span class="badge text-bg-dark rounded-pill me-2">
+                  <strong>Posted on:</strong>
+                  <span class="fw-light">2nd Aug 2024</span>
+                </span>
+                <span class="badge text-bg-dark rounded-pill me-2">
+                  <strong>Category:</strong>
+                  <span class="fw-light">Tech</span>
+                </span>
+                <span class="badge text-bg-dark rounded-pill me-2">
+                  <strong>Author:</strong>
+                  <span class="fw-light">Prime Inspire</span>
+                </span>
+              </p>
+            </div>
+            <p class="fw-light small">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
+              nesciunt ducimus deserunt quibusdam veniam, hic rerum ipsam libero
+              voluptas deleniti neque tempore fugit non vitae labore suscipit?
+              Recusandae, quisquam odio? Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Eius nesciunt ducimus deserunt quibusdam veniam,
+              hic rerum ipsam libero voluptas deleniti neque tempore fugit non
+              vitae labore suscipit? Recusandae, quisquam odio?
+            </p>
+          </div>
+          <div class="col-md-6">
+            <figure class="home-header-image-holder">
+              <img
+                src="./assets/imgs/main-header.jpg"
+                alt="main-header"
+                class="rounded img-fluid shadow-sm full-width"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Blog Posts -->
+    <section class="blog-post-list py-5 border-bottom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="post-content-holder">
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                libero sint, ipsam pariatur molestiae voluptate. Veniam numquam
+                consectetur molestias suscipit.
+              </h3>
+              <p>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  voluptate, adipisci ducimus corrupti dolore error quo nisi at!
+                  Suscipit sapiente numquam vero ipsum quasi minima veritatis
+                  eos at porro magnam!
+                </span>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  voluptate, adipisci ducimus corrupti dolore error quo nisi at!
+                  Suscipit sapiente numquam vero ipsum quasi minima veritatis
+                  eos at porro magnam!
+                </span>
+              </p>
+              <p>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  voluptate, adipisci ducimus corrupti dolore error quo nisi at!
+                  Suscipit sapiente numquam vero ipsum quasi minima veritatis
+                  eos at porro magnam!
+                </span>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  voluptate, adipisci ducimus corrupti dolore error quo nisi at!
+                  Suscipit sapiente numquam vero ipsum quasi minima veritatis
+                  eos at porro magnam!
+                </span>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  voluptate, adipisci ducimus corrupti dolore error quo nisi at!
+                  Suscipit sapiente numquam vero ipsum quasi minima veritatis
+                  eos at porro magnam!
+                </span>
+              </p>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                deleniti eos voluptate eius dolor voluptatem, laudantium
+                praesentium neque rerum veritatis possimus, delectus suscipit
+                quae facilis? Dolor sed beatae similique dignissimos.
+              </h3>
+              <p>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  voluptate, adipisci ducimus corrupti dolore error quo nisi at!
+                  Suscipit sapiente numquam vero ipsum quasi minima veritatis
+                  eos at porro magnam!
+                </span>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  voluptate, adipisci ducimus corrupti dolore error quo nisi at!
+                  Suscipit sapiente numquam vero ipsum quasi minima veritatis
+                  eos at porro magnam!
+                </span>
+              </p>
+              <p>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  voluptate, adipisci ducimus corrupti dolore error quo nisi at!
+                  Suscipit sapiente numquam vero ipsum quasi minima veritatis
+                  eos at porro magnam!
+                </span>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  voluptate, adipisci ducimus corrupti dolore error quo nisi at!
+                  Suscipit sapiente numquam vero ipsum quasi minima veritatis
+                  eos at porro magnam!
+                </span>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  voluptate, adipisci ducimus corrupti dolore error quo nisi at!
+                  Suscipit sapiente numquam vero ipsum quasi minima veritatis
+                  eos at porro magnam!
+                </span>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  voluptate, adipisci ducimus corrupti dolore error quo nisi at!
+                  Suscipit sapiente numquam vero ipsum quasi minima veritatis
+                  eos at porro magnam!
+                </span>
+              </p>
+              <p>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  voluptate, adipisci ducimus corrupti dolore error quo nisi at!
+                  Suscipit sapiente numquam vero ipsum quasi minima veritatis
+                  eos at porro magnam!
+                </span>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  voluptate, adipisci ducimus corrupti dolore error quo nisi at!
+                  Suscipit sapiente numquam vero ipsum quasi minima veritatis
+                  eos at porro magnam!
+                </span>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  voluptate, adipisci ducimus corrupti dolore error quo nisi at!
+                  Suscipit sapiente numquam vero ipsum quasi minima veritatis
+                  eos at porro magnam!
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="list-group small mb-3">
+              <div class="list-group-item text-bg-light fw-bold">Archives</div>
+              <a
+                href="#"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+              >
+                2019 <span class="badge text-bg-warning rounded-pill">14</span>
+              </a>
+              <a
+                href="#"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+              >
+                2020 <span class="badge text-bg-warning rounded-pill">46</span>
+              </a>
+              <a
+                href="#"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+              >
+                2021 <span class="badge text-bg-warning rounded-pill">71</span>
+              </a>
+              <a
+                href="#"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+              >
+                2022 <span class="badge text-bg-warning rounded-pill">8</span>
+              </a>
+            </div>
+            <div class="list-group small mb-3">
+              <div class="list-group-item text-bg-light fw-bold">
+                Categories
+              </div>
+              <a
+                href="#"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+              >
+                Tech <span class="badge text-bg-warning rounded-pill">46</span>
+              </a>
+              <a
+                href="#"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+              >
+                Tutorials
+                <span class="badge text-bg-warning rounded-pill">15</span>
+              </a>
+              <a
+                href="#"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+              >
+                Tips & Tricks
+                <span class="badge text-bg-warning rounded-pill">12</span>
+              </a>
+              <a
+                href="#"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+              >
+                Product Reviews
+                <span class="badge text-bg-warning rounded-pill">42</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe -->
+    <section class="subscribe py-5">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="subscribe-heading text-white text-md-end text-center">
+              <h5 class="fs-4 fw-light m-0 mb-md-0 mb-3">
+                Subscribe for newsletters
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <form class="d-flex justify-content-center">
+              <div class="input-group">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control form-control-sm"
+                  placeholder="Your email"
+                />
+                <button
+                  type="submit"
+                  class="btn btn-sm btn-success d-inline-flex align-items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope-check-fill me-1"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"
+                    />
+                    <path
+                      d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"
+                    />
+                  </svg>
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="main-footer text-bg-dark py-5 small">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <figure class="brand-icon mb-2">
+              <img
+                class="brand-icon__image"
+                src="./assets/imgs/Prime-Inspire-Logo-dark.svg"
+                alt="Prime Inspire Logo"
+              />
+            </figure>
+            <address class="small text-secondary">
+              Jayanagar, Bangalore, <br />
+              Karnataka, India. <br />
+              560011
+            </address>
+            <p class="small text-secondary">contact&commat;primeinspire.com</p>
+          </div>
+          <div class="col-md-2">
+            <h6>Main Menu</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary">
+                  Link Item
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary">
+                  Link Item
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary">
+                  Link Item
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary">
+                  Link Item
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary">
+                  Link Item
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h6>Music</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary">
+                  Link Item
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary">
+                  Link Item
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary">
+                  Link Item
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary">
+                  Link Item
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary">
+                  Link Item
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <h6>Follow Us</h6>
+            <p>
+              <a
+                href="#"
+                class="btn btn-sm btn-primary rounded-pill px-md-3 d-inline-flex align-items-center mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-facebook me-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                  />
+                </svg>
+                <span class="d-md-block d-none">Facebook</span>
+              </a>
+              <a
+                href="#"
+                class="btn btn-sm btn-info rounded-pill px-md-3 d-inline-flex align-items-center mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-twitter me-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+                  />
+                </svg>
+                <span class="d-md-block d-none">Twitter</span>
+              </a>
+              <a
+                href="#"
+                class="btn btn-sm btn-danger rounded-pill px-md-3 d-inline-flex align-items-center mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-youtube me-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                  />
+                </svg>
+                <span class="d-md-block d-none">YouTube</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Copyright -->
+    <div class="copy py-4 small" style="background-color: black">
+      <div class="container-fluid">
+        <div class="row justify-content-center text-center text-white">
+          <p class="m-0 small">Copyright &copy; 2024. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Sticky Footer -->
+    <div
+      class="mobile-padding pt-5 pb-4 d-md-none"
+      style="background-color: black"
+    ></div>
+    <div
+      class="d-md-none d-block d-flex p-3 fixed-bottom justify-content-center blur-filter shadow-lg"
+    >
+      <a
+        href="#"
+        class="rounded-pill btn btn-sm btn-warning small px-3 fw-bold d-inline-flex align-items-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-person-check-fill me-1"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"
+          />
+          <path
+            d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+          />
+        </svg>
+        Sign-up for Free
+      </a>
+    </div>
+    <!-- Subscribe Modal -->
+    <div
+      class="modal fade"
+      id="subscribe_modal"
+      tabindex="-1"
+      aria-labelledby="subscribe_modal"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-bg-dark">
+            <h5 class="modal-title">Subscribe to newsletters</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row gx-2">
+                <div class="col-md-6">
+                  <div class="mb-2">
+                    <input
+                      type="text"
+                      name="first-name"
+                      id="first-name"
+                      class="form-control form-control-sm"
+                      placeholder="First Name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-2">
+                    <input
+                      type="text"
+                      name="last-name"
+                      id="last-name"
+                      class="form-control form-control-sm"
+                      placeholder="Last Name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-2">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control form-control-sm"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="d-grid mb-2">
+                    <button
+                      type="submit"
+                      class="btn btn-sm btn-success d-inline-flex align-items-center justify-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-envelope-check-fill me-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"
+                        />
+                        <path
+                          d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"
+                        />
+                      </svg>
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

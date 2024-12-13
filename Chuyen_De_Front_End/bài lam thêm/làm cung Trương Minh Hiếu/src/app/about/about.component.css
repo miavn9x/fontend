@@ -1,0 +1,43 @@
+#about {
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding: 7rem 0;
+  background: #fff;
+}
+
+.about-heading {
+  font-size: 5rem;
+}
+
+.about-img {
+  width: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 2px #000;
+}
+
+.about-content {
+  text-align: start;
+}
+
+.about-welcome,
+.about-desc {
+  font-size: 2rem;
+  text-align: justify;
+}
+
+.about-title {
+  font-size: 4rem;
+}
+
+.about-desc {
+  max-width: 95%;
+  text-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  #about {
+    padding-top: 6rem;
+  }
+}

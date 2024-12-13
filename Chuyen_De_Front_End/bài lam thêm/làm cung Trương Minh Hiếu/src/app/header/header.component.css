@@ -1,0 +1,23 @@
+.header {
+  padding-top: 6rem;
+  background: #FFDBB5;
+}
+
+#header-carousel img {
+  object-fit: cover;
+  object-position: top;
+  max-height: 100vh;
+}
+
+.header__hero {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Responsive */
+@media (max-width: 769px) {
+  .header {
+    padding-top: 5rem;
+  }
+}

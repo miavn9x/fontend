@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+
+    /* Header */
+    .header__navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: 0.1rem solid rgba(0, 0, 0.1);
+    }
+
+    .header__nav-link {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: 0.1rem solid rgba(0, 0, 0.1);
+        display: block;
+        width: 100%;
+    }
+
+    .header__nav-link:hover {
+        background: var(--pink);
+        color: #fff;
+        transition: 1s ease;
+    }
+
+    .header__toggler {
+        display: block;
+    }
+
+    .header #toggler:checked~.header__navbar {
+        display: block;
+    }
+
+    /* Home */
+    .home__title {
+        font-size: 5rem;
+    }
+
+    .home__subtitle {
+        font-size: 2.5rem;
+    }
+
+    /* About */
+}
